@@ -1,0 +1,113 @@
+body,html
+{
+    margin: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    font-family: 'Qwicksand';
+}
+:root
+{
+    --primary-color: #00C5C0;
+    --primary-dark-color:rgb(36, 146, 142);
+    --secondary-color:#3B3838;
+    --secondary-dark-color:rgb(32, 31, 31);
+    --aleternative-color:#E42322;
+    --shadow: #4d4d4d9f;
+
+    --earth-size: 700px;
+}
+#espacio
+{
+    background-image: url(../src/img/bg_space.jpeg);
+    background-size: cover;
+    background-position: fixed;
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+#contenido
+{
+    color: white;
+    margin-top: 40vh;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
+}
+
+#espacio .tierra
+{
+    cursor: pointer;
+    background-image: url(../src/img/mapa_tierra.jpg);
+    background-size: cover;
+    position: fixed;
+    width: var(--earth-size);
+    height: var(--earth-size);
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.411);
+    animation: spin linear alternate infinite 40s;
+    margin: 5vh 50%;
+    transform: translate(-50%, 20%);
+    transition-duration:  0.7s;
+    transition-timing-function: linear;
+}
+
+
+#espacio .tierra:hover
+{
+    transform: translate(-50%, 50%);   
+}
+@keyframes spin{
+    100%{background-position: 100%}
+}
+
+
+.burbuja
+{
+    width: 200px;
+    height: 200px;
+    background-color:  rgba(255, 255, 255, 0.089);
+    border-radius: 50%;
+    box-shadow:  -1px 1px 10px inset rgba(255, 255, 255, 0.089) ,-15px -15px 60px rgba(255, 255, 255, 0.199) inset ;
+    transform: translate(-50%, -50%);
+    display: flex;
+    transition: 1s ;
+    position: fixed;
+    left: 15%;
+    top: 20%;
+    
+    
+  
+}
+
+.burbuja:hover
+{
+    box-shadow:  1px 1px 50px inset rgba(255, 255, 255, 0.233) ,-1px -1px 20px rgba(255, 255, 255, 0.075) inset ;
+}
+
+
+.burbuja .obj
+{  
+    margin: auto;
+    display: flexbox; 
+}
+
+.burbuja #proyects
+{
+    background-color: rgb(255, 180, 41);
+    box-shadow: 0px 0px 50px rgb(219, 80, 0);
+    width: 90px;
+    min-height: 90px;
+    border-radius: 50%;
+}
+
+#proyects h4{
+    color: white;
+    font-size: 12px;
+    margin-top: 40%;
+}
+
+
+
+
+
