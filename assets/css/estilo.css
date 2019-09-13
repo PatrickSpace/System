@@ -41,6 +41,7 @@ body,html
     background-image: url(../src/img/mapa_tierra.jpg);
     background-size: cover;
     position: fixed;
+    z-index: 1;
     width: var(--earth-size);
     height: var(--earth-size);
     border-radius: 50%;
@@ -73,30 +74,49 @@ body,html
     display: flex;
     transition: 1s ;
     position: fixed;
+    z-index: 10;
 }
 .burbuja:hover
 {
     box-shadow:  1px 1px 50px inset rgba(255, 255, 255, 0.233) ,-1px -1px 20px rgba(255, 255, 255, 0.075) inset ;
 }
+
+
+
+
 .burbuja .obj
 {  
     border-radius: 50%;
     margin: auto;
     display: flexbox; 
+    width: 90px;
+    height: 90px;
 }
 
 #cproyects /**burbuja*/
 {
     left: 15%;
     top: 20%;
+    
 }
 .burbuja #proyects
 {
     background-color: rgb(255, 180, 41);
     box-shadow: 0px 0px 50px rgb(219, 80, 0);
-    width: 90px;
-    height: 90px;
+    
 }
+
+.burbuja .objactive /*clase que se le añade al dar click*/
+{
+    
+    border-radius: 0%;
+    width: 2000px;
+    height: 100vh;
+    transition: 0.8s;
+    position: fixed;
+    z-index: 100;
+}
+
 
 
 #ccontacto /**burbuja*/
@@ -107,9 +127,7 @@ body,html
 .burbuja #contacto
 {
     background-color: rgb(2, 211, 141);
-    box-shadow: 0px 0px 50px rgb(0, 212, 219);
-    width: 90px;
-    height: 90px;
+    box-shadow: 0px 0px 50px rgb(0, 212, 219)
 }
 
 #ccv /**burbuja*/
@@ -121,8 +139,6 @@ body,html
 {
     background-color: rgb(6, 247, 26);
     box-shadow: 0px 0px 50px rgb(127, 224, 1);
-    width: 90px;
-    height: 90px;
 }
 
 

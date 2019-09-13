@@ -13,38 +13,36 @@
 
 <body>
 
-    <div class="row" id="espacio">
-
-        <div class="burbuja" id="cproyects">
-            <div class="obj" id="proyects">
-                <h4 class="text-center">Proyectos</h4>
-            </div>
+    <div class="burbuja" onclick="expandir_proyectos()" id="cproyects">
+        <div  class="obj" id="proyects">
+            <h4 class="text-center">Proyectos</h4>
         </div>
-
-        <div class="burbuja" id="ccontacto">
-            <div class="obj" id="contacto">
-                <h4 class="text-center">Contacto</h4>
-            </div>
-        </div>
-
-        <div class="burbuja" id="ccv">
-            <div class="obj" id="cv">
-                <h4 class="text-center">CV</h4>
-            </div>
-        </div>
-
-
-        <div class="w-100" id="contenido">
-            <h1 id="frase1" class="text-center titulo">Piensa diferente</h1>
-        </div>
-
-
-        <div class="tierra" onclick="hola()"></div>
-
-
-
-
     </div>
+
+    <div class="burbuja" id="ccontacto">
+        <div class="obj" id="contacto">
+            <h4 class="text-center">Contacto</h4>
+        </div>
+    </div>
+
+    <div class="burbuja" id="ccv">
+        <div class="obj" id="cv">
+            <h4 class="text-center">CV</h4>
+        </div>
+    </div>
+
+
+    <div class="w-100" id="contenido">
+        <h1 id="frase1" class="text-center titulo">Piensa diferente</h1>
+    </div>
+
+    <div class="row" id="espacio">
+            <div class="tierra" onclick="hola()"></div>
+    </div>
+
+
+
+
 
 
     <script src="assets/js/popper.min.js"></script>
